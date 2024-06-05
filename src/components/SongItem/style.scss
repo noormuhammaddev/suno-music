@@ -50,7 +50,21 @@
     }
 
     .song-card-actions {
-      display: block;
+      display: flex;
+
+      button {
+        background: none;
+        border: none;
+        color: $off-white;
+        cursor: pointer;
+
+        &:hover {
+          color: $purple;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
     }
   }
 }

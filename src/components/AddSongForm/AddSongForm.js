@@ -26,13 +26,15 @@ const AddSongForm = ({ onAdd }) => {
           placeholder="Enter song name"
           value={name}
           onChange={(e) => setName(e.target.value)}
+          className="form-control"
         />
-        <input
+        <textarea
           type="text"
           placeholder="Enter AI prompt"
           value={prompt}
           onChange={(e) => setPrompt(e.target.value)}
-        />
+          className="form-control"
+        ></textarea>
         <button type="submit">Add Song</button>
       </form>
     </section>
