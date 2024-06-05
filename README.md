@@ -32,3 +32,4 @@ I have used React js based reuseable components with combination of SCSS to make
 
 ## Request to Ignore the following stuff
 1. React Routing : I left due to the lack of time to spend on it.
+2. Did not work for responsiveness due to the lack of time. 
