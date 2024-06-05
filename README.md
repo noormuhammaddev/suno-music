@@ -25,7 +25,7 @@ npm start
 
 1. List of available music items
 2. Add/Create a new music item
-3. Edit or Delete the added list item
+3. Edit or Delete the song item
 
 ## General Information
 I have used React js based reuseable components with combination of SCSS to make my code more efficient. 
