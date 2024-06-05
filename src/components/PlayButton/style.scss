@@ -1,0 +1,33 @@
+@import "../../styles/variables.scss";
+.play-button-wrapper {
+  background-color: $grey;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 86px;
+
+  button {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: $light-grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      background-color: $white;
+    }
+  }
+}

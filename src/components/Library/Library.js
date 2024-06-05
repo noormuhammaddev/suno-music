@@ -33,8 +33,6 @@ const Library = () => {
     }
   ]
   
-  console.log(starterData)
-
   const getRandomColor = () => {
     const colors = ['red', 'green', 'blue', 'yellow', 'orange', 'pink', 'cyan', 'magenta'];
     const randomIndex = Math.floor(Math.random() * colors.length);
@@ -78,6 +76,13 @@ const Library = () => {
     setSongs(updatedSongs);
   };
 
+  const handleEditSong = (index, newName, newPrompt) => {
+    const updatedSongs = [...songs];
+    updatedSongs[index].name = newName;
+    updatedSongs[index].prompt = newPrompt;
+    setSongs(updatedSongs);
+  };
+
   return (
     <section className="library-layout">
       <div className="library-add-form-wrapper">
@@ -86,7 +91,12 @@ const Library = () => {
       
       <div className="library-list-wrapper">
         {songs.map((song, index) => (
-          <Song key={index} song={song} onDelete={() => handleDeleteSong(index)} />
+          <Song 
+            key={index} 
+            song={song} 
+            onDelete={() => handleDeleteSong(index)} 
+            onEdit={(newName, newPrompt) => handleEditSong(index, newName, newPrompt)}
+          />
         ))}
       </div>
     </section>

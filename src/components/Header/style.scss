@@ -26,6 +26,7 @@ header {
           color: $off-white;
           text-decoration: none;
 
+          &.active,
           &:hover {
             color: $purple;
           }
