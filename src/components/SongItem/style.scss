@@ -1,0 +1,56 @@
+@import "../../styles/variables.scss";
+
+.song-card {
+  height: 88px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 0 15px 0 0;
+  position: relative;
+
+  .song-card-thumbnail {
+    width: 52px;
+    height: 52px;
+  }
+
+  .song-card-detail {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    p {
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .song-card-actions {
+      display: none;
+    }
+  }
+
+  &:hover {
+    background-color: $grey;
+
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 15px;
+      top: 0;
+      bottom: 0;
+      right: 100%;
+      background-color: $grey;
+    }
+
+    .song-card-actions {
+      display: block;
+    }
+  }
+}
