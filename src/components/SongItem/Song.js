@@ -9,7 +9,7 @@ const Song = ({ song, onDelete, onEdit }) => {
   const [editedName, setEditedName] = useState(song.name);
   const [editedPrompt, setEditedPrompt] = useState(song.prompt);
 
-  const handleSaveEdit = () => {
+  const handleSaveEdit = (e) => {
     onEdit(editedName, editedPrompt);
     setIsEditing(false);
   };
@@ -28,7 +28,9 @@ const Song = ({ song, onDelete, onEdit }) => {
                     type="text"
                     className="editable-form-control"
                     value={editedName}
-                    onChange={(e) => setEditedName(e.target.value)}
+                    onChange={(e) => {
+                      console.log("Edit : ", e.target)
+                      setEditedName(e.target.value)}}
                   />
                 </div>
                 <div className="item">
@@ -40,8 +42,7 @@ const Song = ({ song, onDelete, onEdit }) => {
                   />
                 </div>
                 
-                
-                <button onClick={handleSaveEdit}>Save</button>
+                <button onClick={(e)=>handleSaveEdit(e)}>Save</button>
               </div>
               
             </>

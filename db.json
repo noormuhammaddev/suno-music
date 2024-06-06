@@ -27,34 +27,6 @@
       "color": "yellow",
       "createdAt": "2024-05-06T17:00:00-02:00",
       "id": "f350"
-    },
-    {
-      "id": "f70d",
-      "name": "Noor",
-      "prompt": "2025",
-      "color": "cyan",
-      "createdAt": "2024-06-06T10:25:46.480Z"
-    },
-    {
-      "id": "e5ab",
-      "name": "Saif",
-      "prompt": "QA songs",
-      "color": "orange",
-      "createdAt": "2024-06-06T10:30:15.014Z"
-    },
-    {
-      "id": "5579",
-      "name": "yusuf bin noor",
-      "prompt": "yest song description",
-      "color": "yellow",
-      "createdAt": "2024-06-06T10:39:11.982Z"
-    },
-    {
-      "id": "0fe3",
-      "name": "Here song",
-      "prompt": "sdfasd",
-      "color": "pink",
-      "createdAt": "2024-06-06T10:40:39.396Z"
     }
   ]
 }
