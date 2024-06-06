@@ -21,11 +21,23 @@ npm install
 npm start
 ```
 
+## Setup Local server
+1. install Json-server using following command
+   `npm install -g json-server`
+2. run the local server by using following command
+   json-server --watch db.json --port 3001
+
+
+
+
 ## Features
 
 1. List of available music items
 2. Add/Create a new music item
 3. Edit or Delete the song item
+4. Fake API to manage Data
+
+
 
 ## General Information
 I have used React js based reuseable components with combination of SCSS to make my code more efficient. 
